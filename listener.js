@@ -11,7 +11,7 @@ const mongoose  = require('mongoose');
 const reqHandler=require('./reqHandler/req');
 const app=express();
 const server=require('http').createServer(app);
-const port=5000;
+const port=process.env.PORT || 5000;
 
 const wss=new WebSocket.Server({server:server});
 
@@ -39,7 +39,7 @@ mongoose
 
   )
   .then(result => {
-        server.listen(5000,()=>{
+        server.listen(port,()=>{
             console.log("listening : 5000");
         })
         
