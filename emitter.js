@@ -4,7 +4,7 @@ const crypto=require('crypto');
 
 const aesjs=require('aes-js');
 
-const serverAddress="ws://127.0.0.1:5000";
+const serverAddress="ws://127.0.0.1:${process.env.PORT || 5000}";
 
 const {passKey,iv}=require('./key');
 
