@@ -1,0 +1,21 @@
+{
+  "name": "level2",
+  "version": "1.0.0",
+  "description": "app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aes-js": "^3.1.2",
+    "crypto-js": "^4.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.5",
+    "mongoose": "^5.12.2",
+    "websocket": "^1.0.33",
+    "ws": "^7.4.4"
+  }
+}
